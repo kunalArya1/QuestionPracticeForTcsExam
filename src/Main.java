@@ -271,8 +271,29 @@ public class Main {
         return (squareRootNumber * squareRootNumber) == num ;
     }
 // 21. Friendly pair or not (amicable or not) using Java
-    public static void printFriendlyPair(int num){
+    public static boolean checkFriendlyPair(int num1,int num2){
+        /*
 
+            A "friendly pair" or "friendly numbers" are pairs of numbers that share
+            the same abundancy index.The abundancy index of a number is defined as
+            the sum of its divisors divided by the number itself.
+
+            Setps:
+                Calculate the sum of divisors for each number:
+                                Find all divisors of the number and sum them up.
+                Calculate the abundancy index:
+                                Divide the sum of the divisors by the number itself.
+                Compare the abundancy indices:
+                                If the abundancy indices are equal, the numbers are friendly.
+         */
+
+        int sumOfDivisorOfNumber1 = sumOfDivisorOfNumber(num1);
+        int sumOfDivisorOfNumber2 = sumOfDivisorOfNumber(num2);
+
+        double abundancyIndexOfNum1 = (double) (sumOfDivisorOfNumber1 / num1);
+        double abundancyIndexOfNum2 = (double) (sumOfDivisorOfNumber2 / num2);
+
+        return abundancyIndexOfNum1 == abundancyIndexOfNum2;
     }
 // 22. Factorial of a Number in Java
     public static int factorialOfNumber(int num ){
@@ -325,7 +346,16 @@ public class Main {
         }
         return ans;
     }
-
+// 28. Find the sum of divisor of a number
+    public static int sumOfDivisorOfNumber(int num){
+        int sum = 0;
+        for (int i = 1; i <= num/2; i++) {
+            if(num % i == 0){
+                sum += i;
+            }
+        }
+        return sum;
+    }
 
 
     public static void main(String[] args) {
@@ -350,6 +380,7 @@ public class Main {
         System.out.println("Strong Number or Not :- " + isStrongNumber(5));
         System.out.println("Armstrong Number or Not :- " + isArmstrong(1634));
         System.out.println("Leap Year or Not :- " + isLeapYear(2001));
+        System.out.println("Friendly Pair or Not :- " + checkFriendlyPair(6,28));
     }
 
 }
