@@ -132,7 +132,19 @@ public class Main {
     }
 // 8. Write a program to check if a given number is an Armstrong number.
     public static  boolean isArmstrong(int  num){
-        return true;
+
+        // An Armstrong number (also known as a narcissistic number, plenary number, or plump number) is a number that is equal to
+        // the sum of its own digits each raised to the power of the number of digits.
+        int digitCount = String.valueOf(num).length();
+
+        int digitPowSum = 0;
+        int temp = num;
+        while (num > 0 ){
+            int digit = num % 10;
+            digitPowSum += (int)Math.pow(digit,digitCount);
+            num = num / 10;
+        }
+        return (temp == digitPowSum);
     }
 // 9. Program to Find the Sum of First N Natural Numbers using java
     public  static  int sumOfFirstNaturalNumber(int num){
@@ -175,38 +187,98 @@ public class Main {
     }
 // 13. Check Whether or Not the Number is a Strong Number in Java
     public static boolean isStrongNumber(int num){
-        return  false;
+
+        // A strong number (also known as a strong Harshad number) is a number
+        // that equals the sum of the factorial of its digits.
+        int sumOfFactorial = 0;
+        int temp = num;
+        while ( num > 0){
+            int digit = num % 10;
+            sumOfFactorial += factorialOfNumber(digit);
+            num = num / 10;
+        }
+        return  ( temp == sumOfFactorial);
     }
 // 14. Check Whether or Not the Number is a Perfect Number in Java
     public static boolean isPerfectNumber(int num){
-        return false;
+        int sum = 0;
+        for (int i = 1; i < num ; i++) {
+            if(num % i == 0){
+                sum += i;
+            }
+        }
+        return (sum == num);
     }
 // 15. Check Whether Or Not the Number is an Automorphic Number in Java
-    public static boolean isAutomorphicNumber(){
-        return  false;
+    public static boolean isAutomorphicNumber( int num ){
+        // An automorphic number, also known as a circular number or a pernicious number,
+        // is a number whose square ends with the number itself.
+
+        int square = (num * num);
+        int lastDigit = square % 10;
+
+        return  (lastDigit == num);
     }
 // 16. Harshad number or not using Java
     public static boolean isHarshdNumber(int num ){
-        return false;
+        int digitSum = 0;
+        int temp = num;
+        //A Harshad number (also known as Niven number) is a number that is divisible by the sum of its digits.
+        while (num > 0){
+            int digit = num % 10;
+            digitSum += digit;
+            num = num /10;
+        }
+        return (temp % digitSum == 0);
     }
 // 17. Abundant Number or not in Java
     public static boolean isAbundantNumber(int num){
-        return false;
+        int sum = 0;
+        for (int i = 1; i < num ; i++) {
+            if(num % i == 0){
+                sum += i;
+            }
+        }
+        return (sum > num);
+
     }
 // 18. Check Whether or Not the Year is a Leap Year in Java
     public static boolean isLeapYear(int num ){ return  false;}
 // 19. Find the Factors of a Number in Java
-    public static void printFactorOfNumber(int num){ }
+    public static void printFactorOfNumber(int num){
+        for (int i = 1; i <= num /2; i++) {
+            if(num % i == 0){
+                System.out.println("Factor of "+ num +" is :- " +i);
+            }
+        }
+    }
 // 20. Check for Perfect Square in Java
     public static boolean isPerfectSquare(int num){
-        return false;
+        int squareRootNumber = (int)Math.sqrt(num);
+
+        return (squareRootNumber * squareRootNumber) == num ;
     }
 // 21. Friendly pair or not (amicable or not) using Java
     public static void printFriendlyPair(int num){
 
     }
 // 22. Factorial of a Number in Java
-    public static int factorialOfNumber(int num ){return 1;}
+    public static int factorialOfNumber(int num ){
+
+        // if num is smaller than zero then
+        if(num < 0 ){
+            return -1;
+        }
+        // this is for factorial of 0
+        if(num ==0){
+            return 1;
+        }
+        int fact = 1;
+        for (int i = 1; i <= num ; i++) {
+            fact *= i;
+        }
+        return fact;
+    }
 // 23. Program for Finding out the Prime Factors of a number in Java
     public static void printPrimeFactorOfNumber(int num ){}
 // 24. Find the Prime Numbers in a Given Interval in Java
@@ -215,8 +287,32 @@ public class Main {
     public static void printArmstrongNumberInInterval(int start , int end){}
 // 26. Find the Fibonacci Series up to Nth Term in Java
     public static void printFibonacciSeriesUpToNthTerm(int num){}
+// 27. Find Square root of a num
+    public static int squareRootOfNumber(int num){
+
+        /*
+            Steps:
+                Algorithm:
+                    We will first declare a variable called ‘ans’.
+                    Then, we will first run a loop(say i) from 1 to n.
+                    Until the value i*i <= n, we will update the variable ‘ans’, with i.
+                    Once, the value i*i becomes greater than n, we will break out from the loop as the current number i, or the numbers greater than i, cannot be our answers.
+                    Finally, our answer should have been stored in ‘ans’.
+
+        */
 
 
+        int ans= 0;
+        for (int i = 1; i < num; i++) {
+            if(i * i <= num){
+                ans = i;
+            }
+            else{
+                break;
+            }
+        }
+        return ans;
+    }
 
 
 
@@ -231,6 +327,16 @@ public class Main {
         System.out.println("Greatest Among Three Number :- " + greatestNumberAmongThreeNumber(0,-3,-1));
         System.out.println("Power of Number is :- "+powerOfNumber(2,5
         ));
+        System.out.println("Square Root of number is :- "+ squareRootOfNumber(36));
+        System.out.println("Is Perfect Square or not :- " + isPerfectSquare(36));
+        System.out.println("Is Perfect Number or Not :- " + isPerfectNumber(8128));
+        System.out.println("Automrphic Number or Not :- "+ isAutomorphicNumber(7));
+        System.out.println("Harshad Number or Not :- " + isHarshdNumber(19));
+        System.out.println("Abundant Number or Not :- "+isAbundantNumber(14));
+        printFactorOfNumber(6);
+        System.out.println("Factorial of a Number is :- " + factorialOfNumber(-12));
+        System.out.println("Strong Number or Not :- " + isStrongNumber(5));
+        System.out.println("Armstrong Number or Not :- " + isArmstrong(1634));
     }
 
 }
