@@ -243,7 +243,19 @@ public class Main {
 
     }
 // 18. Check Whether or Not the Year is a Leap Year in Java
-    public static boolean isLeapYear(int num ){ return  false;}
+    public static boolean isLeapYear(int year ){
+
+        // A year is normally considered a leap year if it is divisible by 4.
+        //However, if a year is divisible by 100,
+        // it must also be divisible by 400 to be considered a leap year.
+
+        if(year % 4  == 0){
+            if( year % 100 != 0 || year % 400 == 0){
+                return  true;
+            }
+        }
+        return  false;
+    }
 // 19. Find the Factors of a Number in Java
     public static void printFactorOfNumber(int num){
         for (int i = 1; i <= num /2; i++) {
@@ -337,6 +349,7 @@ public class Main {
         System.out.println("Factorial of a Number is :- " + factorialOfNumber(-12));
         System.out.println("Strong Number or Not :- " + isStrongNumber(5));
         System.out.println("Armstrong Number or Not :- " + isArmstrong(1634));
+        System.out.println("Leap Year or Not :- " + isLeapYear(2001));
     }
 
 }
