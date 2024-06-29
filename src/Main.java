@@ -25,15 +25,32 @@ public class Main {
         return false;
     }
 // 2. Write a program to check if two given strings are anagrams of each other.
-    public  static boolean isAnagram(String str1, String str2){
-
-        return true;
-    }
-// 3. Write a program to print the first n numbers in the Fibonacci sequence.
-    public  static  void printFibonacci( int n ){
-
-    }
 // 4. Write a program to check if a given number is prime.
+public  static boolean isAnagram(String str1, String str2){
+
+    return true;
+}
+    // 3. Write a program to print the first n numbers in the Fibonacci sequence.
+    public  static  void printFibonacci( int n ){
+        /*
+                Steps:
+                    1. create two variable first and second with 0 and 1 value respectively
+                    2. move first to next term by assigning the value of second
+                    3. move second to next term by assigning the sum of first and second in next variable to get next term in series
+                    4. print second to get you series
+
+         */
+
+        int first = 0 ;
+        int second = 1;
+        System.out.print("Fibonacci Series using iteration:- ");
+        for (int i = 0; i <= n; i++) {
+            System.out.print(first + " ");
+            int next = first + second;
+            first = second;
+            second = next;
+        }
+    }
     public  static  boolean isPrime(int num){
         /*
             steps:
@@ -356,7 +373,44 @@ public class Main {
         }
         return sum;
     }
+// 29. Write a program to print the first n numbers in the Fibonacci sequence using recursion.
+    public static int findNthFibonacciNumberUsingRecursion(int n){
+        if (n <= 1){
+            return n;
+        }
 
+        return (findNthFibonacciNumberUsingRecursion(n-1) + findNthFibonacciNumberUsingRecursion(n-2));
+    }
+// 30. Write a program to print fibonacci series using recursion
+    public static void printFibonacciSeries(int n, int first , int second ){
+        if(n > 0){
+            System.out.print(first + " ");
+            printFibonacciSeries(n-1,second,first+second);
+        }
+    }
+    public static void printFibonacciSeriesUsingRecursion(int n){
+        int first = 0;
+        int second = 1;
+        System.out.print("Fibonacci Series using the Recursion :- ");
+        printFibonacciSeries(n + 1,first,second);
+
+
+    }
+// 31. Write a program to print Nth fibonacci number using iteration
+    public static int findNthFibonacciNumberUsingIteration(int n){
+        if (n <= 1)
+            return n;
+
+        int first =0;
+        int second =1;
+        for (int i = 1; i < n; ++i) {
+            int next = first + second;
+            first = second;
+            second = next;
+
+        }
+        return  second;
+    }
 
     public static void main(String[] args) {
         printDigitOfNumber(450);
@@ -381,6 +435,13 @@ public class Main {
         System.out.println("Armstrong Number or Not :- " + isArmstrong(1634));
         System.out.println("Leap Year or Not :- " + isLeapYear(2001));
         System.out.println("Friendly Pair or Not :- " + checkFriendlyPair(6,28));
+        printFibonacci(5);
+        System.out.println();
+        System.out.println( "Nth Fibonacci Number using Recursion  :- " + findNthFibonacciNumberUsingRecursion(5));
+        printFibonacciSeriesUsingRecursion(5);
+        System.out.println();
+        System.out.println("Nth Fibonacci Number using Iteration  :- " + findNthFibonacciNumberUsingIteration(6));
+
     }
 
 }
