@@ -1,3 +1,4 @@
+import  java.util.*;
 public class Main {
 
 // 1. Write a program to check if a given string is a palindrome.
@@ -25,12 +26,56 @@ public class Main {
         return false;
     }
 // 2. Write a program to check if two given strings are anagrams of each other.
-// 4. Write a program to check if a given number is prime.
-public  static boolean isAnagram(String str1, String str2){
+    public  static boolean isAnagram(String str1, String str2){
+        /*
+            Steps:
+                1. Find length of both of the string
+                2. Compare the length of both string
+                    I. if not equal then return false
+                    II. if true then go to next step
+                3. Convert the string to character array
+                4. sort both the character array
+                5. compare each element of the character array
+                    I. if true then return true
+                    II. if false then return false
 
-    return true;
+        */
+    boolean anagram = false;
+    if( str1.length() != str2.length()) return false;
+
+    // Convert the string to the character Array
+
+        // Method 1: inbuilt java function [ toCharArray() ]
+            char[] charArray1 = str1.toCharArray();
+            char[] charArray2 = str2.toCharArray();
+        // Method 2: Using Manual work
+
+            char[] charArray3 = new char[str1.length()];
+
+            for (int i = 0; i < str1.length(); i++) {
+                charArray3[i] = str1.charAt(i);
+            }
+    // Now sort the Char Array
+        Arrays.sort(charArray1);
+        Arrays.sort(charArray2);
+    // Compare each Element of both the array
+
+        // Method: 1 using java inBuilt function
+            anagram = Arrays.equals(charArray1,charArray2);
+
+        // Method: 2 using manual work
+            for (int i = 0; i < charArray1.length; i++) {
+                if( charArray1[i] == charArray2[i]){
+                    anagram= true;
+                }else{
+                    anagram = false;
+                }
+
+            }
+
+    return anagram;
 }
-    // 3. Write a program to print the first n numbers in the Fibonacci sequence.
+// 3. Write a program to print the first n numbers in the Fibonacci sequence.
     public  static  void printFibonacci( int n ){
         /*
                 Steps:
@@ -51,6 +96,7 @@ public  static boolean isAnagram(String str1, String str2){
             second = next;
         }
     }
+// 4. Write a program to check a number is prime or not
     public  static  boolean isPrime(int num){
         /*
             steps:
@@ -330,13 +376,41 @@ public  static boolean isAnagram(String str1, String str2){
         return fact;
     }
 // 23. Program for Finding out the Prime Factors of a number in Java
-    public static void printPrimeFactorOfNumber(int num ){}
+    public static void printPrimeFactorOfNumber(int num ){
+        System.out.print("Prime Factor of Number is :- ");
+        for (int i = 1; i < num; i++) {
+            if(num % i == 0){
+                if (isPrime(i)){
+                    System.out.print(i + " ");
+                }
+            }
+        }
+        System.out.println();
+    }
 // 24. Find the Prime Numbers in a Given Interval in Java
-    public static void printPrimeNumberInGivenRange(int start,int end){}
+    public static void printPrimeNumberInGivenRange(int start,int end){
+        System.out.print("Prime Number in Range:- ");
+        for (int i = start; i <= end  ; i++) {
+            if (isPrime(i)){
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println();
+    }
 // 25. Armstrong Numbers between Two Intervals using Java
-    public static void printArmstrongNumberInInterval(int start , int end){}
+    public static void printArmstrongNumberInInterval(int start , int end){
+        System.out.print("Armstrong Number in Range :- ");
+        for (int i = start; i <= end ; i++) {
+            if(isArmstrong(i)){
+                System.out.print(i + " ");
+            }
+        }
+        System.out.println();
+    }
 // 26. Find the Fibonacci Series up to Nth Term in Java
-    public static void printFibonacciSeriesUpToNthTerm(int num){}
+    public static void printFibonacciSeriesUpToNthTerm(int num){
+        printFibonacci(num);
+    }
 // 27. Find Square root of a num
     public static int squareRootOfNumber(int num){
 
@@ -441,7 +515,12 @@ public  static boolean isAnagram(String str1, String str2){
         printFibonacciSeriesUsingRecursion(5);
         System.out.println();
         System.out.println("Nth Fibonacci Number using Iteration  :- " + findNthFibonacciNumberUsingIteration(6));
-
+        printArmstrongNumberInInterval(2,500);
+        printFibonacciSeriesUpToNthTerm(5);
+        System.out.println();
+        printPrimeNumberInGivenRange(1,10);
+        printPrimeFactorOfNumber(21);
+        System.out.println("Given string is anagram :- " + isAnagram("listen","silent"));
     }
 
 }
