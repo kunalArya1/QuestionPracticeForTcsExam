@@ -44,11 +44,26 @@ public class ArrayQuestions {
         }
         return num;
     }
+//3. Second Smallest Element in an array in Java
+    public static int secondLargestElementInArray(int [] arr){
+        int first,second;
+        first =  second = Integer.MIN_VALUE;
+        for (int i = 0; i < arr.length ; i++) {
+            if(first < arr[i]){
+                second = first;
+                first = arr[i];
+            } else if (arr[i] > second && arr[i] != first) {
+                second = arr[i];
+            }
+
+        }
+        return  second;
+    }
     public static void main(String[] args) {
-        int [] arr = {10,30,40,80,20,90,-10};
+        int [] arr = {-10,-30,-40,-80,-20,-90,-10};
         System.out.println("Largest Element in Array :- " + largestElementInArray(arr));
         System.out.println("Largest Element in Array :- " + smallestElementInArray(arr));
-
+        System.out.println("Second Largest Element in Array :- "+ secondLargestElementInArray(arr));
 
     }
 }
