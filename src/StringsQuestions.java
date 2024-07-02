@@ -81,11 +81,31 @@ public class StringsQuestions {
         }
         return  map.toString();
     }
+//6. Check Two Strings are Anagram or Not
+    public static boolean isAnagramOrNot(String str1 ,String str2){
+        if (str1.length() != str2.length()){
+            return false;
+        }
+        char [] charArray1 = str1.toCharArray();
+        char [] charArray2 = str2.toCharArray();
+
+        Arrays.sort(charArray1);
+        Arrays.sort(charArray2);
+
+        for (int i = 0; i < charArray1.length; i++) {
+            if(charArray1[i] != charArray2[i]){
+                return false;
+            }
+
+        }
+        return true;
+    }
     public static void main(String[] args) {
         System.out.println( "Character is Vowel or Consonants:-  "+isVowelOrConsonant('t'));
         System.out.println("String Length without Length Method :- " + stringLength("kunal"));
         System.out.println("String is Palindrome or Not :- " + isPalindrome("chhc"));
         System.out.println("Reversed String is :- "+ reverseString("Kunal"));
         System.out.println("Frequency of characters in string :- "+ frequencyOfCharactersInString("kunaal"));
+        System.out.println("String is Anagram or not :- " + isAnagramOrNot("heart","earth"));
     }
 }
