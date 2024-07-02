@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b43080f6-2c34-4a1b-b393-7d8c655689a8" name="Changes" comment="Basic Question Practice for tcs Exam">
-      <change afterPath="$PROJECT_DIR$/src/Array.java" afterDir="false" />
+    <list default="true" id="b43080f6-2c34-4a1b-b393-7d8c655689a8" name="Changes" comment="Array Basic Question Added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MatrixQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MatrixQuestions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NumbersQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumbersQuestion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecursionQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionQuestions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringsQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringsQuestions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,23 +39,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Array.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Array.executor": "Run",
+    "Application.ArrayQuestions.executor": "Run",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-f644763e9732-24fca987" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -62,7 +73,10 @@
       <option name="presentableId" value="Default" />
       <updated>1719549602111</updated>
       <workItem from="1719549603611" duration="19929000" />
-      <workItem from="1719635007839" duration="7065000" />
+      <workItem from="1719635007839" duration="8478000" />
+      <workItem from="1719643836284" duration="977000" />
+      <workItem from="1719645447163" duration="3390000" />
+      <workItem from="1719882716342" duration="13995000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Question Practice for tcs Exam">
       <option name="closed" value="true" />
@@ -104,7 +118,39 @@
       <option name="project" value="LOCAL" />
       <updated>1719639601990</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Basic Question Practice for tcs Exam">
+      <option name="closed" value="true" />
+      <created>1719642594889</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719642594889</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Array Basic Question Added">
+      <option name="closed" value="true" />
+      <created>1719890180457</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1719890180457</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Array Basic Question Added">
+      <option name="closed" value="true" />
+      <created>1719892902777</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1719892902777</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Array Basic Question Added">
+      <option name="closed" value="true" />
+      <created>1719902014467</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1719902014468</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,7 +158,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Basic Question Practice for tcs Exam" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic Question Practice for tcs Exam" />
+    <MESSAGE value="Array Basic Question Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Array Basic Question Added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

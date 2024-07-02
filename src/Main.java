@@ -1,4 +1,5 @@
 import  java.util.*;
+import  java.lang.*;
 public class Main {
 
 // 1. Write a program to check if a given string is a palindrome.
