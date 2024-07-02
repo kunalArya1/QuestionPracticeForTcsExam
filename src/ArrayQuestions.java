@@ -1,7 +1,6 @@
 
 /*
         9. Sorting element in array by frequency in Java
-        13. Removing Duplicates elements from an array in Java
         14. Java program to count numbers of even and odd elements in an array
         15. Rotation of element of array – left and right
         16. Block swap algorithm for array rotation
@@ -180,6 +179,14 @@ public class ArrayQuestions {
         }
         return list;
     }
+//13. Removing Duplicates elements from an array in Java
+    public static HashSet<Integer> removeDuplicateElementOfArray(int []arr){
+        HashSet<Integer> list = new HashSet<>();
+        for (int i = 0; i < arr.length; i++) {
+            list.add(arr[i]);
+        }
+        return list;
+    }
 
 
 
@@ -202,6 +209,7 @@ public class ArrayQuestions {
         System.out.println("Count of Distinct Element in Array :- " + countDistinctElement(arr));
         System.out.println("Repeating Element of Array :- " + repeatingElementOfArray(arr));
         System.out.println("Non-Repeating Element of Array is :- " + nonRepeatingElementOfArray(arr).toString());
+        System.out.println("Remove Duplicate Element of Array :- " + removeDuplicateElementOfArray(arr));
     }
 
 }
