@@ -1,10 +1,6 @@
 
 /*
-        8. Java program to find the frequency of elements in an array
         9. Sorting element in array by frequency in Java
-        10. Count distinct element in an array in Java
-        11. Repeating element of an array in Java
-        12. Non Repeating elements in an Array in Java
         13. Removing Duplicates elements from an array in Java
         14. Java program to count numbers of even and odd elements in an array
         15. Rotation of element of array – left and right
@@ -17,7 +13,7 @@
 */
 
 
-import java.util.Arrays;
+import java.util.*;
 
 public class ArrayQuestions {
 //1. Largest Element of the array using Java
@@ -110,10 +106,86 @@ public class ArrayQuestions {
                 }
             }
         }
+
+    }
+//9. Java program to find the frequency of elements in an array
+    public static HashMap<Integer,Integer> findFrequency(int[] arr){
+
+        /*
+                A HashMap named frequencyMap is initialized to store the frequency of elements.
+                    Iterate over the array using a for-each loop.
+                    For each element, check if it is already in the frequencyMap.
+                            If it is, increment its count by 1.
+                            If it is not, add it to the map with a count of 1.
+                Return the frequencyMap.
+        * */
+
+        HashMap <Integer,Integer> freq = new HashMap<>();
+
+        for (int i = 0; i < arr.length; i++) {
+            if(freq.containsKey(arr[i])){
+                freq.put(arr[i],freq.get(arr[i])+1);
+            }else{
+                freq.put(arr[i],1);
+            }
+        }
+        for (Integer key : freq.keySet()){
+            System.out.println("Element of Array "+ key + "and Frequency is " + freq.get(key) );
+        }
+        return freq;
+    }
+//10. Count distinct element in an array in Java
+    public static int countDistinctElement(int []arr){
+        HashSet<Integer> count  = new HashSet<>();
+
+        for (int i = 0; i < arr.length; i++) {
+            count.add(arr[i]);
+        }
+        return  count.size();
+    }
+//11. Repeating element of an array in Java
+    public static ArrayList<Integer> repeatingElementOfArray(int [] arr){
+        HashMap<Integer,Integer> map = new HashMap<>();
+        ArrayList<Integer> list = new ArrayList<>();
+
+        for (int i = 0; i < arr.length; i++) {
+            if(map.containsKey(arr[i])){
+                map.put(arr[i],map.get(arr[i])+1);
+            }else{
+                map.put(arr[i],1);
+            }
+        }
+        for (Integer key : map.keySet()){
+            if(map.get(key)> 1){
+                list.add(key);
+            }
+        }
+        return list;
+    }
+//12. Non Repeating elements in an Array in Java
+    public static ArrayList<Integer> nonRepeatingElementOfArray(int [] arr){
+        HashMap<Integer,Integer> nonRepeatingElem = new HashMap<>();
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int i = 0; i < arr.length; i++) {
+            if(nonRepeatingElem.containsKey(arr[i])){
+                nonRepeatingElem.put(arr[i] ,nonRepeatingElem.get(arr[i])+1);
+            }else {
+                nonRepeatingElem.put(arr[i],1);
+            }
+        }
+        for(Integer key : nonRepeatingElem.keySet()){
+            if (nonRepeatingElem.get(key) == 1){
+                list.add(key);
+            }
+        }
+        return list;
     }
 
+
+
+
     public static void main(String[] args) {
-        int [] arr = {-10,-30,-40,-80,-20,-90,-40};
+        int [] arr = {10,30,40,80,20,20,40};
         System.out.println("Largest Element in Array :- " + largestElementInArray(arr));
         System.out.println("Smallest Element in Array :- " + smallestElementInArray(arr));
         System.out.println("Second Largest Element in Array :- "+ secondLargestElementInArray(arr));
@@ -122,8 +194,14 @@ public class ArrayQuestions {
 //        reverseAnArrayWithoutAnotherArray(arr);
         System.out.println("Reverse an Array without using another array :- " + Arrays.toString(arr));
 //        sortHalfInAscendingAndDescending(arr);
-        sortArray(arr);
+//        sortArray(arr);
+
         System.out.println("Sort Array :- " + Arrays.toString(arr) );
+        // Looping on hashMap
+        System.out.println("Freq of Element in Aray is :- " + findFrequency(arr).toString());
+        System.out.println("Count of Distinct Element in Array :- " + countDistinctElement(arr));
+        System.out.println("Repeating Element of Array :- " + repeatingElementOfArray(arr));
+        System.out.println("Non-Repeating Element of Array is :- " + nonRepeatingElementOfArray(arr).toString());
     }
 
 }
