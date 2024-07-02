@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b43080f6-2c34-4a1b-b393-7d8c655689a8" name="Changes" comment="Array Basic Question Added">
+    <list default="true" id="b43080f6-2c34-4a1b-b393-7d8c655689a8" name="Changes" comment="String Questions Added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RecursionQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionQuestions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StringsQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringsQuestions.java" afterDir="false" />
     </list>
@@ -89,7 +88,7 @@
       <workItem from="1719635007839" duration="8478000" />
       <workItem from="1719643836284" duration="977000" />
       <workItem from="1719645447163" duration="3390000" />
-      <workItem from="1719882716342" duration="17730000" />
+      <workItem from="1719882716342" duration="18259000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Question Practice for tcs Exam">
       <option name="closed" value="true" />
@@ -171,7 +170,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719904422886</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="String Questions Added">
+      <option name="closed" value="true" />
+      <created>1719939155138</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1719939155138</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +187,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Basic Question Practice for tcs Exam" />
     <MESSAGE value="Array Basic Question Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Array Basic Question Added" />
+    <MESSAGE value="String Questions Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="String Questions Added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

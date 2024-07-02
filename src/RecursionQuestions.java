@@ -13,6 +13,15 @@ public class RecursionQuestions {
 
 
 */
+
+// 1. Write a program to print the first n numbers in the Fibonacci sequence using recursion.
+//    public static int printFirstNthFibonacci(int n ){
+//        if(n<= 1){
+//            return n;
+//        }
+//
+//
+//    }
     public static void main(String[] args) {
 
     }
