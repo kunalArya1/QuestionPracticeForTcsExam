@@ -456,7 +456,7 @@ public class Main {
 
         return (findNthFibonacciNumberUsingRecursion(n-1) + findNthFibonacciNumberUsingRecursion(n-2));
     }
-// 30. Write a program to print fibonacci series using recursion
+    // 30. Write a program to print fibonacci series using recursion
     public static void printFibonacciSeries(int n, int first , int second ){
         if(n > 0){
             System.out.print(first + " ");

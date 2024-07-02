@@ -7,8 +7,6 @@
     <list default="true" id="b43080f6-2c34-4a1b-b393-7d8c655689a8" name="Changes" comment="Array Basic Question Added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MatrixQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MatrixQuestions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NumbersQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumbersQuestion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RecursionQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecursionQuestions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StringsQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringsQuestions.java" afterDir="false" />
     </list>
@@ -44,6 +42,7 @@
     "Application.Array.executor": "Run",
     "Application.ArrayQuestions.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.StringsQuestions.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -57,6 +56,20 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="StringsQuestions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StringsQuestions" />
+      <module name="tcsExamPractice" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.StringsQuestions" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -76,7 +89,7 @@
       <workItem from="1719635007839" duration="8478000" />
       <workItem from="1719643836284" duration="977000" />
       <workItem from="1719645447163" duration="3390000" />
-      <workItem from="1719882716342" duration="13995000" />
+      <workItem from="1719882716342" duration="17730000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Question Practice for tcs Exam">
       <option name="closed" value="true" />
@@ -150,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719902014468</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Array Basic Question Added">
+      <option name="closed" value="true" />
+      <created>1719904422886</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1719904422886</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
