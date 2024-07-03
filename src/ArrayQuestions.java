@@ -9,6 +9,9 @@
         19. Java program to check the balance of parenthesis
         20. Write a program to check if there exist a duplicate key in the array?
 
+        Study about searching algorithms and sorting algorithms
+        and study time complexity of different data structure
+
 */
 
 
