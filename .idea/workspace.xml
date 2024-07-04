@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b43080f6-2c34-4a1b-b393-7d8c655689a8" name="Changes" comment="Recursion Question Added">
+    <list default="true" id="b43080f6-2c34-4a1b-b393-7d8c655689a8" name="Changes" comment="Array Questions Added">
+      <change afterPath="$PROJECT_DIR$/src/Oops/Abstraction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Oops/Encaplusation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Oops/Inheritance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Oops/Polymorphism.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ArrayQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArrayQuestions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NumbersQuestion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumbersQuestion.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +42,7 @@
   "keyToString": {
     "Application.Array.executor": "Run",
     "Application.ArrayQuestions.executor": "Run",
+    "Application.Inheritance.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.MatrixQuestions.executor": "Run",
     "Application.NumbersQuestion.executor": "Run",
@@ -58,7 +61,20 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.NumbersQuestion">
+  <component name="RunManager" selected="Application.Inheritance">
+    <configuration name="Inheritance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Oops.Inheritance" />
+      <module name="tcsExamPractice" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Oops.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MatrixQuestions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MatrixQuestions" />
       <module name="tcsExamPractice" />
@@ -89,6 +105,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Inheritance" />
         <item itemvalue="Application.NumbersQuestion" />
         <item itemvalue="Application.RecursionQuestions" />
         <item itemvalue="Application.MatrixQuestions" />
@@ -116,7 +133,8 @@
       <workItem from="1719643836284" duration="977000" />
       <workItem from="1719645447163" duration="3390000" />
       <workItem from="1719882716342" duration="21434000" />
-      <workItem from="1720012649898" duration="6115000" />
+      <workItem from="1720012649898" duration="7004000" />
+      <workItem from="1720062633676" duration="1098000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Question Practice for tcs Exam">
       <option name="closed" value="true" />
@@ -230,7 +248,23 @@
       <option name="project" value="LOCAL" />
       <updated>1720020798969</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Number related Question Added">
+      <option name="closed" value="true" />
+      <created>1720027211404</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1720027211404</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Array Questions Added">
+      <option name="closed" value="true" />
+      <created>1720028747630</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1720028747630</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,7 +276,9 @@
     <MESSAGE value="String Questions Added" />
     <MESSAGE value="2-D Array Question Added" />
     <MESSAGE value="Recursion Question Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Recursion Question Added" />
+    <MESSAGE value="Number related Question Added" />
+    <MESSAGE value="Array Questions Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Array Questions Added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
