@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b43080f6-2c34-4a1b-b393-7d8c655689a8" name="Changes" comment="Polymorphism Implementation Example Added">
+    <list default="true" id="b43080f6-2c34-4a1b-b393-7d8c655689a8" name="Changes" comment="Encapsulation Implementation Example Added">
       <change afterPath="$PROJECT_DIR$/src/Oops/Abstraction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Oops/Encaplusation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +61,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Encaplusation">
+  <component name="RunManager" selected="Application.Abstraction">
     <configuration name="Abstraction (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Oops.Abstraction" />
       <module name="tcsExamPractice" />
@@ -131,10 +129,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Abstraction" />
         <item itemvalue="Application.Encaplusation" />
         <item itemvalue="Application.Polymorphism" />
         <item itemvalue="Application.Abstraction (1)" />
-        <item itemvalue="Application.Abstraction" />
         <item itemvalue="Application.Inheritance" />
       </list>
     </recent_temporary>
@@ -160,7 +158,7 @@
       <workItem from="1719645447163" duration="3390000" />
       <workItem from="1719882716342" duration="21434000" />
       <workItem from="1720012649898" duration="7004000" />
-      <workItem from="1720062633676" duration="3157000" />
+      <workItem from="1720062633676" duration="4113000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Question Practice for tcs Exam">
       <option name="closed" value="true" />
@@ -306,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720065530272</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Encapsulation Implementation Example Added">
+      <option name="closed" value="true" />
+      <created>1720065974624</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1720065974624</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,7 +328,8 @@
     <MESSAGE value="Array Questions Added" />
     <MESSAGE value="Inheritance Implementation Example Added" />
     <MESSAGE value="Polymorphism Implementation Example Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Polymorphism Implementation Example Added" />
+    <MESSAGE value="Encapsulation Implementation Example Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Encapsulation Implementation Example Added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
