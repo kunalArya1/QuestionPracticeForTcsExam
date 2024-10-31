@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b43080f6-2c34-4a1b-b393-7d8c655689a8" name="Changes" comment="Encapsulation Implementation Example Added">
-      <change afterPath="$PROJECT_DIR$/src/Oops/Abstraction.java" afterDir="false" />
+    <list default="true" id="b43080f6-2c34-4a1b-b393-7d8c655689a8" name="Changes" comment="Abstraction Implementation Example Added">
+      <change afterPath="$PROJECT_DIR$/src/OopsRevision/Abstraction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OopsRevision/Encapusation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OopsRevision/Inheritance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/OopsRevision/Polymorphism.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,40 +38,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Abstraction (1).executor": "Run",
-    "Application.Abstraction.executor": "Run",
-    "Application.Array.executor": "Run",
-    "Application.ArrayQuestions.executor": "Run",
-    "Application.Encaplusation.executor": "Run",
-    "Application.Inheritance.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.MatrixQuestions.executor": "Run",
-    "Application.NumbersQuestion.executor": "Run",
-    "Application.Polymorphism.executor": "Run",
-    "Application.RecursionQuestions.executor": "Run",
-    "Application.StringsQuestions.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Abstraction (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Abstraction.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Array.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ArrayQuestions.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Encaplusation.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Encapusation.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Inheritance.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MatrixQuestions.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NumbersQuestion.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OopsRevision.Abstraction.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OopsRevision.Inheritance.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OopsRevision.Polymorphism (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.OopsRevision.Polymorphism.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Polymorphism.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RecursionQuestions.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StringsQuestions.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.Abstraction">
-    <configuration name="Abstraction (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Oops.Abstraction" />
+}</component>
+  <component name="RunManager" selected="Application.OopsRevision.Abstraction">
+    <configuration name="Encapusation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OopsRevision.Encapusation" />
       <module name="tcsExamPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Oops.*" />
+          <option name="PATTERN" value="OopsRevision.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,12 +84,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Abstraction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Oops.Abstraction" />
+    <configuration name="OopsRevision.Abstraction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OopsRevision.Abstraction" />
       <module name="tcsExamPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Oops.*" />
+          <option name="PATTERN" value="OopsRevision.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +97,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Encaplusation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Oops.Encaplusation" />
+    <configuration name="OopsRevision.Inheritance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OopsRevision.Inheritance" />
       <module name="tcsExamPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Oops.*" />
+          <option name="PATTERN" value="OopsRevision.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,12 +110,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Inheritance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Oops.Inheritance" />
+    <configuration name="OopsRevision.Polymorphism (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OopsRevision.Polymorphism" />
       <module name="tcsExamPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Oops.*" />
+          <option name="PATTERN" value="OopsRevision.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,12 +123,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Polymorphism" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Oops.Polymorphism" />
+    <configuration name="OopsRevision.Polymorphism" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="OopsRevision.Polymorphism" />
       <module name="tcsExamPractice" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Oops.*" />
+          <option name="PATTERN" value="OopsRevision.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Abstraction" />
-        <item itemvalue="Application.Encaplusation" />
-        <item itemvalue="Application.Polymorphism" />
-        <item itemvalue="Application.Abstraction (1)" />
-        <item itemvalue="Application.Inheritance" />
+        <item itemvalue="Application.OopsRevision.Abstraction" />
+        <item itemvalue="Application.Encapusation" />
+        <item itemvalue="Application.OopsRevision.Polymorphism" />
+        <item itemvalue="Application.OopsRevision.Polymorphism (1)" />
+        <item itemvalue="Application.OopsRevision.Inheritance" />
       </list>
     </recent_temporary>
   </component>
@@ -158,7 +167,10 @@
       <workItem from="1719645447163" duration="3390000" />
       <workItem from="1719882716342" duration="21434000" />
       <workItem from="1720012649898" duration="7004000" />
-      <workItem from="1720062633676" duration="4113000" />
+      <workItem from="1720062633676" duration="11621000" />
+      <workItem from="1724515541522" duration="5000" />
+      <workItem from="1727248868423" duration="16000" />
+      <workItem from="1730188453204" duration="1145000" />
     </task>
     <task id="LOCAL-00001" summary="Basic Question Practice for tcs Exam">
       <option name="closed" value="true" />
@@ -312,7 +324,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720065974624</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Abstraction Implementation Example Added">
+      <option name="closed" value="true" />
+      <created>1720067162663</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1720067162663</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,7 +349,8 @@
     <MESSAGE value="Inheritance Implementation Example Added" />
     <MESSAGE value="Polymorphism Implementation Example Added" />
     <MESSAGE value="Encapsulation Implementation Example Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Encapsulation Implementation Example Added" />
+    <MESSAGE value="Abstraction Implementation Example Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Abstraction Implementation Example Added" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
